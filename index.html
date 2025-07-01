@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="pageTitle">KANYANAS English Teacher</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav_header">
+            <a class="a_nav" href="#home"><img class="logo_header" src="images/logo.svg" alt="Логотип" /></a>
+            <ul class="ul_header">
+                <li class="li_header"><a class="a_nav" href="#home" data-lang-key="navHome">Головна</a></li>
+                <div class="line_header"></div>
+                <li class="li_header"><a class="a_nav" href="#about" data-lang-key="navAbout">Про вчителя</a></li>
+                <div class="line_header"></div>
+                <li class="li_header"><a class="a_nav" href="#program" data-lang-key="navProgram">Навчальна програма</a>
+                </li>
+                <div class="line_header"></div>
+                <li class="li_header"><a class="a_nav" href="#materials" data-lang-key="navMaterials">Матеріали</a></li>
+            </ul>
+            <button type="button" class="burger_menu" aria-label="Toggle navigation">
+                <img src="images/burgermenu.png" alt="menu icon" class="img_burgermenu">
+            </button>
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="select">
+                <div class="selected" data-default="Мова" data-one="Українська" data-two="Англійська">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
+                        <path
+                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="options">
+                    <div title="option-1">
+                        <input id="option-1" name="option" type="radio" />
+                        <label class="option" for="option-1" data-txt="Українська"></label>
+                    </div>
+                    <div title="option-2">
+                        <input id="option-2" name="option" type="radio" />
+                        <label class="option" for="option-2" data-txt="Англійська"></label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="teacher-info">
+                    <img src="images/teacher.jpg" alt="Фото викладача" class="teacher-photo" />
+                    <h1 class="title_hero">GLOW | AK</h1>
+                    <p class="subtitle_header" data-lang-key="heroSubtitle">
+                        Онлайн курс, що підходить саме тобі – від основ до впевненого володіння. Вчися у зручному
+                        темпі та досягай результатів із задоволенням!
+                    </p>
+                </div>
+                <div class="hero-actions" id="about">
+                    <button class="button_hero secondary" id="button_hero" data-lang-key="buttonTest">Пройти
+                        тест</button>
+                    <button class="button_hero tertiary" id="openModal" data-lang-key="signupButton">Записатися на
+                        урок</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_about">
+            <div class="about-content">
+                <img src="images/teacher--2.PNG" alt="Фото викладача" class="teacher-photo_about large" />
+                
+                <div class="about-info">
+                    <h2 class="h2_about" data-lang-key="aboutTitle">Про вчителя</h2>
+                    <p class="p_about" data-lang-key="aboutText1">
+                        Маю 5 років досвіду викладання англійської мови <br> для студентів
+                        різного рівня.
+                    </p>
+                    <p class="p_about" data-lang-key="aboutText2">
+                        Я використовую комунікативний підхід у навчанні, що допомагає
+                        студентам швидко та ефективно опановувати розмовну англійську.
+                        Мої заняття інтерактивні, цікаві та адаптовані до індивідуальних
+                        потреб кожного учня.
+                    </p>
+                    <a class="a_about" href="biography.html"><button id="program" class="certificates"
+                                data-lang-key="certificatesButton">Мої сертифікати
+                        </button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 data-lang-key="programTitle">Навчальна програма</h2>
+            <div class="program-content">
+                <div class="course-item">
+                    <h3 data-lang-key="generalEnglishTitle">Загальна англійська</h3>
+                    <p class="course-info" data-lang-key="generalEnglishAudience"><b>Цільова аудиторія:</b> всі, хто
+                        бажає покращити свої знання англійської мови.</p>
+                    <p class="course-info" data-lang-key="generalEnglishFeatures"><b>Особливості:</b> індивідуальний
+                        підхід до кожного учня, адаптація матеріалів відповідно до ваших потреб та ритму навчання.</p>
+                    <p class="course-info" data-lang-key="generalEnglishTopics"><b>Основні теми:</b> leisure time,
+                        technology world, education, shopping, entertainment, travelling, sports, the natural world,
+                        food, following dreams та інші цікаві напрямки.</p>
+                </div>
+                <div class="course-item">
+                    <h3 data-lang-key="conversationalEnglishTitle">Розмовна англійська</h3>
+                    <p class="course-info" data-lang-key="conversationalEnglishAudience"><b>Цільова аудиторія:</b> всі,
+                        хто хоче впевнено спілкуватися англійською.</p>
+                    <p class="course-info" data-lang-key="conversationalEnglishFeatures"><b>Особливості:</b> заняття
+                        побудовані з урахуванням ваших інтересів і потреб, що допомагає швидко покращити навички
+                        говоріння.</p>
+                    <p class="course-info" data-lang-key="conversationalEnglishTopics" id="materials"><b>Основні
+                            теми:</b> leisure
+                        time, technology world, education, shopping, entertainment, travelling, sports, the natural
+                        world, food, following dreams та інші актуальні теми.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_materials">
+            <h2 class="section-title" data-lang-key="materialsSectionTitle">Матеріали</h2>
+            <div class="materials-content">
+                <div class="materials-category">
+                    <h3 class="materials-title" data-lang-key="assignmentsTitle">
+                        Завдання для самостійного виконання
+                    </h3>
+                    <p class="materials-description" data-lang-key="assignmentsDescription">
+                        Практичні вправи для закріплення вивченого матеріалу.
+                    </p>
+                    <img src="images/clipboard.png" class="exercises" alt="Завдання" />
+                </div>
+                <div class="materials-category">
+                    <h3 class="materials-title" data-lang-key="videoLessonsTitle">Відеоуроки</h3>
+                    <p class="materials-description" data-lang-key="videoLessonsDescription">
+                        Корисні відеоматеріали для кращого розуміння тем.
+                    </p>
+                    <img src="images/monitor.png" class="videolessons" alt="Відеоуроки" />
+                </div>
+                <div class="materials-category">
+                    <h3 class="materials-title" data-lang-key="recommendedResourcesTitle">
+                        Рекомендовані книги та сайти
+                    </h3>
+                    <p class="materials-description" data-lang-key="recommendedResourcesDescription">
+                        Добірка корисних ресурсів для вивчення англійської.
+                    </p>
+
+                    <button class="material material-button-nude" id="openBooksModalBtn" data-lang-key="openBooks">Відкрити підручники</button>
+
+                    <img src="images/open-book.png" class="books" id="questions" alt="Книги"
+                        style="margin-top: 15px;" />
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section_faq">
+            <h2 class="section-title" data-lang-key="faqSectionTitle">Поширені запитання</h2>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <button class="faq-question" data-lang-key="faqQuestion1">Як проходять заняття?</button>
+                    <div class="faq-answer" data-lang-key="faqAnswer1">Заняття проводяться онлайн через зручну для вас
+                        платформу (наприклад, Zoom, Google Meet). Вони включають теоретичну частину, практичні вправи
+                        та
+                        інтерактивні завдання.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-lang-key="faqQuestion2">Чи потрібні додаткові матеріали?</button>
+                    <div class="faq-answer" data-lang-key="faqAnswer2">Основні навчальні матеріали надаються. За
+                        бажанням ви можете використовувати додаткові ресурси за рекомендацією викладача.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-lang-key="faqQuestion3">Як записатися на урок?</button>
+                    <div class="faq-answer" data-lang-key="faqAnswer3" id="reviews">Щоб записатися на урок, будь ласка,
+                        заповніть
+                        форму зворотного зв'язку вгорі сторінки або зв'яжіться зі мною напряму за вказаними контактними
+                        даними.</div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="section">
+    <h2 class="reviews-title" data-lang-key="reviewsSectionTitle">Відгуки</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper" id="reviews-container">
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review1">Ви найкращий репетитор, з яким мені коли-небудь
+                    доводилося займатися! Заняття проходять
+                    цікаво, легко і надихають вчитися ще більше. Вона вміє підтримати, пояснити складне
+                    простими
+                    словами і щиро радіє моїм успіхам. Завдяки їй я почала любити англійську! Щиро рекомендую!
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review2">Доброго дня. Як репетитор Ви мені дуже подобаєтесь,
+                    в мене з мовами дуже туго, але після
+                    наших занять я почала розуміти англійську і запам'ятовувати. Іноді мені здається, що правил
+                    з англійської я знаю більше, ніж з української. Якщо мені щось не зрозуміло, то Bи і 5
+                    разів
+                    будете пояснювати. А ще Ви завжди мене хвалите і мені дуже приємно. Жалкую тільки про те, що
+                    не знайшла вас раніше</p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review3">Анастасія дуже гарний репетитор з англійської мови,
+                    вона максимально доступно пояснює навіть
+                    найскладніший матеріал, розкладаючи його на частинки та подаючи матеріал так, що навіть
+                    дорослим стає цікаво. Вміє утримати увагу учнів. Заняття проходять ефективно та мають
+                    результат. Безмежно вдячні Анастасії за терпіння та допомогу Щиро бажаємо нових звершень і
+                    Перемог</p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review4">Мені дуже подобаються ваші уроки з Вікторією,
+                    індивідуальний підхід, це головне що дитина
+                    повністю вас сприймає, не боїться, готується до занять залюбки. А ще люблю коли є контрольні
+                    заняття, і бачу великий результат і дуже вами задоволена</p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review5">Thank you for the interesting and clear lessons! I
+                    really liked how you explained everything
+                    and helped me understand difficult topics. The atmosphere during the lessons was very
+                    pleasant, which made learning easy. Your lessons are very helpful and memorable for
+                    me.Thank
+                    you !</p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review6">Хочу щиро подякувати чудовій репетиторці з
+                    англійської мови Анастасії, яка займається з моїм
+                    сином Артемом! Ми дуже раді, що знайшли саме її -справжнього професіонала своєї справи. Вона
+                    не просто навчає, а вміє зацікавити, мотивувати та підтримати. Артем із задоволенням чекає
+                    кожного заняття, і його рівень знань значно покращився за короткий час. Особливо тішить, що
+                    з'явилася впевненість у спілкуванні англійською! Завдяки її терплячості, доброзичливості та
+                    індивідуальному підходу, син не лише краще вивчає мову, а й полюбив сам процес навчання.
+                    Видно, що вона вкладає душу в кожен урок. Щиро рекомендую всім батькам, які шукають для
+                    своєї дитини не просто вчителя, а справжнього наставника </p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review7">Анастасія дуже гарний репетитор з англійської мови,
+                    вона максимально доступно пояснює навіть
+                    найскладніший матеріал, розкладаючи його на частинки та подаючи матеріал так, що навіть
+                    дорослим стає цікаво. Заняття проходять ефективно та мають результат. Тому, з впевненістю,
+                    рекомендую</p>
+            </div>
+            <div class="swiper-slide">
+                <p class="p_swiper" data-lang-key="review8">Мені дуже подобається вчитися англійської мови з
+                    Анастасією Михалівною! Вона завжди пояснює
+                    все так, що я швидко розумію нові слова і правила. Ми багато читаємо, граємо в цікаві ігри,
+                    дивимось відео і вчимося говорити англійською. Завдяки нашим заняттям я почала краще
+                    розуміти завдання у школі, а ще мені стало легше писати тести. Анастасія Михайлівна завжди
+                    добра, підтримує мене і хвалить, коли я стараюсь. Я тепер більше люблю англійську.</p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="review-button-wrapper">
+        <button id="leave-review-btn" class="button secondary" data-lang-key="leaveReviewButton">Залишити відгук</button>
+    </div>
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="review-form">
+                <h3 data-lang-key="leaveYourReviewTitle">Залиште свій відгук</h3>
+                <form id="submit-review-form">
+                    <input type="text" id="reviewer-name" placeholder="Ваше ім'я" data-lang-key="yourNamePlaceholder">
+                    <textarea id="review-text" placeholder="Ваш відгук" data-lang-key="yourReviewPlaceholder"></textarea>
+                    <button type="submit" class="button tertiary" data-lang-key="submitReviewButton">Надіслати
+                        відгук</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer-links-left">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#home" class="footer-anchor" data-lang-key="footerHome">ГОЛОВНА</a>
+                    </li>
+                    <li class="footer-item"><a href="#about" class="footer-anchor" data-lang-key="footerAbout">ПРО
+                            ВЧИТЕЛЯ</a></li>
+                    <li class="footer-item"><a href="#program" class="footer-anchor" data-lang-key="footerProgram">НАВЧАЛЬНІ
+                            ПРОГРАМИ</a></li>
+                    <li class="footer-item"><a href="#materials" class="footer-anchor"
+                            data-lang-key="footerMaterials">МАТЕРІАЛИ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-right">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#questions" class="footer-anchor"
+                            data-lang-key="footerFAQ">ПОШИРЕНІ
+                            ЗАПИТАННЯ</a></li>
+                    <li class="footer-item"><a href="#reviews" class="footer-anchor"
+                            data-lang-key="footerReviews">ВІДГУКИ</a>
+                    </li>
+                    <li class="footer-item"><a href="#" class="footer-anchor" data-lang-key="footerContact">ЗВОРОТНІЙ
+                            ЗВ'ЯЗОК</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="Логотип" class="footer-logo-img" />
+            </div>
+            <div class="footer-contact">
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">Telegram:
+                        <span class="contact-email">
+                            <a href="https://t.me/KanyAnas" class="footer-anchor">@KanyAnas</a>
+                        </span>
+                    </li>
+                    <li class="footer-contact-item" data-lang-key="footerPhone">
+                        Телефон: <a href="#" class="footer-anchor"><span class="contact-phone">+380 96 988 19
+                                22</span></a>
+                    </li>
+                    <li class="footer-contact-item copyright">
+                        <span data-lang-key="footerCopyright"> 2025 Анастасія Михайлівна. Всі права захищено.</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a href="#" class="footer-anchor" data-lang-key="footerPrivacyPolicy">Політика
+                            конфіденційності</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div id="lesson-signup-modal" class="modalLesson">
+            <div class="modal-header">
+                <h3 data-lang-key="modalSignupTitle">Записатися на урок</h3>
+                <button class="close-button" id="close-modal-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="lesson-signup-form" class="form">
+                    <div class="form-group">
+                        <label for="name" class="form-label" data-lang-key="modalNameLabel">Ім'я:</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label" data-lang-key="modalEmailLabel">Email:</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label" data-lang-key="modalPhoneLabel">Номер
+                            телефону:</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topic" class="form-label" data-lang-key="modalTopicLabel">Бажана тема
+                            уроку:</label>
+                        <textarea id="topic" name="topic" class="form-textarea"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" required>
+                        <label for="agreement" class="form-label checkbox-label" data-lang-key="modalAgreementLabel">
+                            Я погоджуюся з умовами обробки даних
+                        </label>
+                    </div>
+
+                    <button type="submit" class="button primary" data-lang-key="modalSubmitButton">Надіслати
+                        заявку</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div id="modal-overlay-test" class="modal-overlay-test">
+        <div id="test-modal" class="modalTest">
+            <div class="modal-header">
+                <h3 data-lang-key="modalSignupTitleTest">Тест на визначення рівня англійської</h3>
+                <button class="close-button" id="close-test-modal-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p data-lang-key="modalBodyTest">Тест на визначення рівня - <a class="testLink"
+                        href="https://forms.gle/rJABVQwif1XZeXDP8">https://forms.gle/rJABVQwif1XZeXDP8</a> , переходьте
+                    за посиланням та дізнавайтесь свій рівень англійської. Успіхів.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="books-modal-overlay" class="modal-overlay">
+        <div class="modal-content" id="books-modal-content">
+            <span class="close-btn" id="close-books-modal-btn">&times;</span>
+            <h2 data-lang-key="AccessBooks">Доступ до підручників</h2>
+            <input type="password" id="books-code" placeholder="Введіть код доступу" data-lang-key="codeBooks">
+            <button id="check-books-code-btn" data-lang-key="ConfirmBooks">Підтвердити</button>
+            <p id="books-message" data-lang-key="booksMessageF"></p>
+            <div id="books-list-container">
+                <h3 data-lang-key="AvailableBooks">Доступні підручники:</h3>
+                <ul id="bookListModal"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

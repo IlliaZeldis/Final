@@ -1,0 +1,150 @@
+@media screen and (min-width: 743px) and (max-width: 1249px) {
+    .header {
+        height: 100px; 
+    }
+
+    .nav_header {
+        width: 95%;
+        height: 100px;
+    }
+
+    .logo_header {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ul_header {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .ul_header {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(231, 216, 201, 0.95); 
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        display: none; 
+        z-index: 90; 
+    }
+
+    .ul_header.active {
+        display: flex; 
+    }
+
+    .li_header {
+        margin: 10px 0;
+        width: fit-content;
+    }
+
+    .line_header {
+        display: none; 
+    }
+
+    .burger_menu {
+        display: block; 
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin-left: auto; 
+        z-index: 101; 
+    }
+
+    .img_burgermenu {
+        width: 30px;
+        height: 30px;
+    }
+
+    body.dark-theme .ul_header {
+        background-color: rgba(75, 76, 79, 0.95);
+    }
+
+
+    .li_header {
+        font-size: 20px;
+    }
+
+    .line_header {
+        width: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .selected {
+        margin-left: 50px; 
+    }
+
+    .profile-section {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+    }
+        .ul_header {
+        display: none; 
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .nav_header {
+        justify-content: space-between; 
+    }
+
+
+    .left-column {
+        padding-right: 0;
+        flex: 0 0 auto;
+        width: 100%; 
+        margin-bottom: 0; 
+    }
+    .right-column {
+        padding-left: 0;
+    }
+
+    .qualification-section {
+        padding: 15px;
+    }
+
+    .certificate-images {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: 8px;
+    }
+
+    .certificate-image {
+        max-width: 120px; 
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .container_footer {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links-left,
+    .footer-links-right,
+    .footer-contact {
+        margin-bottom: 20px; 
+    }
+
+    .footer-item,
+    .footer-contact-item {
+        font-size: 18px;
+    }
+
+    .footer-logo-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+}

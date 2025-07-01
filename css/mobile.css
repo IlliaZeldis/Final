@@ -1,0 +1,349 @@
+@media screen and (max-width: 743px)
+{
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .swiper-slide p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .reviews-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #review-form {
+    padding: 20px;
+  }
+
+  #review-form h3 {
+    font-size: 1.1em;
+  }
+
+  #review-form input[type="text"],
+  #review-form textarea {
+    font-size: 0.95em;
+  }}
+
+@media screen and (max-width: 743px) {
+  
+  .header {
+    background-color: #e7d8c9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .burger_menu {
+    display: block;
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+  }
+
+  .img_burgermenu {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ul_header {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #e7d8c9;
+    width: 100%;
+  }
+
+  .ul_header.active {
+    display: flex;
+    position: absolute;
+    top: 78px;
+    left: 150px;
+    width: 300px;
+    border-radius: 0 0 100px 100px;
+  }
+
+  .li_header {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  .a_nav {
+    font-size: 20px;
+    color: #6e5773;
+  }
+
+  .a_nav:hover {
+    color: #a98467;
+    border-bottom: 2px solid #a98467;
+  }
+
+  .logo_header {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  /* ГОЛОВНА */
+  .hero {
+    max-width: 743px;
+    min-width: 0;
+    height: 855px;
+  }
+  .hero-content {
+    max-width: 420px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-actions
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  #openModal
+  {
+    margin-top: 15px;
+  }
+
+  /* ЧАСТИНА ПРО ВЧИТЕЛЯ */
+
+  .section_about {
+    flex-direction: column;
+    max-width: 743px;
+    min-width: 100px;
+    height: 700px;
+  }
+  .about-content {
+    flex-direction: column;
+    max-width: 100%;
+    height: 700px;
+  }
+  .about-info {
+    max-width: 743px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .a_about {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .p_about {
+    order: 2;
+    max-width: 370px;
+    font-size: 16px;
+  }
+  .teacher-photo_about {
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 0;
+    width: 170px;
+    height: 170px;
+  }
+  .h2_about {
+    margin-top: 50px;
+    margin-bottom: 250px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions a {
+    margin: 0.5em 0;
+    width: 90%;
+    text-align: center;
+  }
+  /* НАВЧАЛЬНА ПРОГРАМА */
+  .section-title {
+    font-size: 30px;
+  }
+  #program {
+    max-width: 743px;
+  }
+  #program h2 {
+    font-size: 30px;
+  }
+  .program-content {
+    max-width: 300px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+  .course-item h3 {
+    font-size: 18px;
+  }
+  .course-info {
+    font-size: 15px;
+  }
+  /* МАТЕРІАЛИ */
+  
+  .section_materials {
+    max-width: 743px;
+    min-width: 100px;
+    height: 1000px;
+  }
+  .materials-content {
+    width: 100%;
+    justify-content: center;
+  }
+  .materials-title {
+    font-size: 22.4px;
+  }
+  .materials-description {
+    font-size: 16px;
+  }
+  .materials-category:nth-child(5), .materials-category:nth-child(6) {
+    display: none;
+  }
+  /* ПОШИРЕННІ ПИТАННЯ */
+  .section_faq {
+    max-width: 743px;
+    min-width: 100px;
+  }
+  .faq-content {
+    max-width: 500px;
+    padding: 0 1em;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 743px){
+/* ВІДГУКІ */
+    .swiper {
+    width: 100%; 
+    height: 250px;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: none;
+    padding: 20px;
+  }
+
+  .swiper-slide p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .reviews-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #review-form {
+    padding: 20px;
+  }
+
+  #review-form h3 {
+    font-size: 1.1em;
+  }
+
+  #review-form input[type="text"],
+  #review-form textarea {
+    font-size: 0.95em;
+  }
+/* ФУТЕР */
+  .footer
+  {
+    max-width: 743px;
+    min-width: 0;
+  }
+  .footer-anchor
+  {
+    font-size: 10px;
+    
+  }
+  .footer-contact-item
+  {
+    font-size: 10px;
+    line-height: 24px;
+    
+  }
+  .footer-logo-img
+  {
+    width: 75px;
+    height: 75px;
+  }
+  /* Секція "ГОЛОВНИЙ БЛОК" */
+.hero-content .subtitle_header {
+    font-size: 1.1rem; /* Зменшення розміру для мобільних */
+    line-height: 1.5;
+    text-align: center; /* Центрування тексту */
+    padding: 0 15px; /* Додаткові відступи для тексту всередині блоку */
+}
+
+/* Секція "ПРО ВЧИТЕЛЯ" */
+.section_about .p_about {
+    font-size: 1rem; /* Зменшення розміру для мобільних */
+    line-height: 1.6;
+    text-align: center; /* Центрування тексту */
+    margin-bottom: 1em; /* Відступ знизу */
+}
+
+/* Секція "НАВЧАЛЬНІ ПРОГРАМИ" */
+.program-content .course-info {
+    font-size: 0.95rem; /* Ще менший розмір для детального тексту */
+    line-height: 1.5;
+}
+
+/* Секція "МАТЕРІАЛИ" */
+.materials-category .materials-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Секція "ПОШИРЕНІ ЗАПИТАННЯ" */
+.faq-answer {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 10px 15px; /* Коригування відступів для відповідей */
+}
+
+/* Секція "ВІДГУКИ" */
+.swiper-slide .p_swiper {
+    font-size: 0.9rem; /* Зменшення розміру відгуків */
+    line-height: 1.5;
+    text-align: center;
+}
+  
+}
+}
